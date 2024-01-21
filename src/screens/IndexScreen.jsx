@@ -43,20 +43,22 @@ const IndexScreen = ({navigation}) => {
         </View>
     );
 };
-
+// 
 
 
 const styles = StyleSheet.create({
     row: {
+        display: "flex",
         flexDirection: 'row',
         justifyContent: 'space-between',
         paddingVertical: 20,
         paddingHorizontal: 10,
-        borderTopWidth: 1,
+        borderWidth: 1,
         borderColor: 'gray',
     },
     title: {
-        fontSize: 18
+        fontSize: 18,
+        flex: 1,
     },
     icon: {
         fontSize: 24

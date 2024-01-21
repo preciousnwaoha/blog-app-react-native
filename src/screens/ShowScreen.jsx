@@ -10,10 +10,20 @@ const ShowScreen = ({route}) => {
     const {title, content} = blogPost;
 
     return (
-        <View>
+        <View style={{
+            marginHorizontal: 10,
+        }}>
+            <View style={{height: 20,}} />
             {/* Your component content goes here */}
-            <Text>{title}</Text>
-            <Text>{content}</Text>
+            <Text style={{
+                fontSize: 20,
+                fontWeight: 'bold',
+                marginBottom: 10,
+            
+            }}>{title}</Text>
+            <Text sx={{
+                fontSize: 16,
+            }}>{content}</Text>
         </View>
     );
 };
